@@ -1,7 +1,7 @@
 {
   "file_generated_by": "FlutterFire CLI",
   "purpose": "FirebaseAppID & ProjectID for this Firebase app in this directory",
-  "GOOGLE_APP_ID": "1:388778357826:ios:0c881d88dae77ff21629db",
-  "FIREBASE_PROJECT_ID": "water-app-ffb7c",
-  "GCM_SENDER_ID": "388778357826"
+  "GOOGLE_APP_ID": "1:189042231626:ios:fd4a5e7370827688c219b3",
+  "FIREBASE_PROJECT_ID": "nasa-hackathon-98d21",
+  "GCM_SENDER_ID": "189042231626"
 }

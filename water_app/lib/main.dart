@@ -14,6 +14,7 @@ import 'package:get/get.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
+    name: "NASA-hackathon",
     options: DefaultFirebaseOptions.currentPlatform,
   );
   await LocalNotificationService.setup();
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'BlueVista',
+      title: 'Blue Vista',
       theme: AppTheme.themeData(false, context),
       // home: const MyHomePage(title: 'Flutter Map Home Page'),
       initialRoute: HomeScreen.id,

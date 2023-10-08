@@ -47,29 +47,29 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAc2qqzmyItf5JNMSamqexO1LYUWjxcbvY',
-    appId: '1:388778357826:web:dc8ea27bf33f7f021629db',
-    messagingSenderId: '388778357826',
-    projectId: 'water-app-ffb7c',
-    authDomain: 'water-app-ffb7c.firebaseapp.com',
-    storageBucket: 'water-app-ffb7c.appspot.com',
-    measurementId: 'G-R08J2VVQ2H',
+    apiKey: 'AIzaSyBCFRQUJpY-9oMRMP5f1Dfni-4ceWl4vLM',
+    appId: '1:189042231626:web:b0e534e77ddcbacac219b3',
+    messagingSenderId: '189042231626',
+    projectId: 'nasa-hackathon-98d21',
+    authDomain: 'nasa-hackathon-98d21.firebaseapp.com',
+    storageBucket: 'nasa-hackathon-98d21.appspot.com',
+    measurementId: 'G-M8DHSBSZWE',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCzNCOanz1C3B0gK3MrmG2tZQZg5gEIczM',
-    appId: '1:388778357826:android:22a9d6872ed5b7a81629db',
-    messagingSenderId: '388778357826',
-    projectId: 'water-app-ffb7c',
-    storageBucket: 'water-app-ffb7c.appspot.com',
+    apiKey: 'AIzaSyC9m6ydO0ufnt8QvKQRW_JBEIobteplLCM',
+    appId: '1:189042231626:android:66c5f6660a219653c219b3',
+    messagingSenderId: '189042231626',
+    projectId: 'nasa-hackathon-98d21',
+    storageBucket: 'nasa-hackathon-98d21.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBW8Nd0YTpfC0jfGvl9_l1f7Z59HOyXwPA',
-    appId: '1:388778357826:ios:0c881d88dae77ff21629db',
-    messagingSenderId: '388778357826',
-    projectId: 'water-app-ffb7c',
-    storageBucket: 'water-app-ffb7c.appspot.com',
+    apiKey: 'AIzaSyCNwYmyOAmEhf7cn7rrnsy8qQzA8H0PCM8',
+    appId: '1:189042231626:ios:fd4a5e7370827688c219b3',
+    messagingSenderId: '189042231626',
+    projectId: 'nasa-hackathon-98d21',
+    storageBucket: 'nasa-hackathon-98d21.appspot.com',
     iosBundleId: 'com.gmail.yp10731155',
   );
 }

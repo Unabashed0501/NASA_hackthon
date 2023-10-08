@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "388778357826",
-    "project_id": "water-app-ffb7c",
-    "storage_bucket": "water-app-ffb7c.appspot.com"
+    "project_number": "189042231626",
+    "project_id": "nasa-hackathon-98d21",
+    "storage_bucket": "nasa-hackathon-98d21.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:388778357826:android:22a9d6872ed5b7a81629db",
+        "mobilesdk_app_id": "1:189042231626:android:66c5f6660a219653c219b3",
         "android_client_info": {
           "package_name": "com.example.water_app"
         }
@@ -15,7 +15,26 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCzNCOanz1C3B0gK3MrmG2tZQZg5gEIczM"
+          "current_key": "AIzaSyC9m6ydO0ufnt8QvKQRW_JBEIobteplLCM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189042231626:android:401b3b16bf29d6adc219b3",
+        "android_client_info": {
+          "package_name": "com.gmail.yp10731155"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9m6ydO0ufnt8QvKQRW_JBEIobteplLCM"
         }
       ],
       "services": {
