@@ -62,7 +62,9 @@ abstract class ProcessStations {
       }
     }
     if (CanadaStationData.isEmpty) {
-      String CanadaStationsCSV = await CloudStorage.getCanadaStationsCSV();
+      String CanadaStationsCSV = await DefaultAssetBundle.of(context).loadString(
+        "assets/data/canada_stations.csv",
+      );
       int CANADACOMMONNAMEIDX = 1;
       int SCIENCIFICNAMEIDX = 2;
       int WATERBODYIDX = 3;

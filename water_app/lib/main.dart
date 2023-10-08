@@ -18,7 +18,7 @@ Future<void> main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   await LocalNotificationService.setup();
-  await CloudStorage.getChatGPTKey();
+  // await CloudStorage.getChatGPTKey();
   await ProcessCities.processCsv();
   runApp(const MyApp());
 }

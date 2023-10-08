@@ -80,7 +80,6 @@ class _CameraPageState extends State<CameraPage> {
                     );
                     if (!currentUser.seenSpecies.contains(scientificName)) {
                       currentUser.seenSpecies.add(scientificName);
-                      CloudStorage.uploadUserData(currentUser.email);
                     }
                     Navigator.of(context).pop();
                     Navigator.of(context).pop();
@@ -152,7 +151,7 @@ class _CameraPageState extends State<CameraPage> {
                   )),
               // CameraPreview(controller),
               Center(
-                child: Image.network(
+                child: Image.asset(
                   image,
                   width: 300,
                   height: 300,
@@ -201,8 +200,7 @@ class _CameraPageState extends State<CameraPage> {
                                 ),
                               ),
                               Center(
-                                child: Image.asset(
-                                  'assets/images/山椒魚.jpg',
+                                child: Image.asset('assets/images/image_mat/$image',
                                   width: 300,
                                   height: 300,
                                 ),

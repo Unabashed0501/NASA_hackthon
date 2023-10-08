@@ -18,7 +18,6 @@ class Authentication {
     try {
       await FirebaseAuth.instance
           .signInWithEmailAndPassword(email: email, password: password);
-      CloudStorage.loadUserData(email);
       return {
         'title': 'You are Login!',
         'desc': '',
@@ -61,7 +60,6 @@ class Authentication {
         password: password,
       );
       currentUser.email = email;
-      CloudStorage.uploadUserData(email);
       return {
         'title': 'Good, you are signed up!',
         'desc': 'Please check your email to verify your account.',

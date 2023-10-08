@@ -79,11 +79,6 @@ class _SpeciesMarkerState extends State<SpeciesMarker> {
               builder: (context) {
                 String sn = popUpSpecies[i]["scientific_name"];
                 // print(ProcessBook.book[sn]!["no_bg_image"]);
-                return FutureBuilder(
-                    future: CloudStorage.getNoBGImageURL(
-                        ProcessBook.book[sn]!["no_bg_image"]),
-                    builder: (context, snapshot) {
-                      if (snapshot.hasData) {
                         return GestureDetector(
                           onTap: () async {
                             _cameras = await availableCameras();
@@ -103,19 +98,15 @@ class _SpeciesMarkerState extends State<SpeciesMarker> {
                                       country: widget.country,
                                       scientificName: popUpSpecies[i]
                                           ["scientific_name"],
-                                      image: snapshot.data as String);
+                                      image: ProcessBook.book["scientific_name"]!["no_bg_image"] as String);
                                 }),
                               );
                             }
                           },
-                          child: Image.network(snapshot.data as String),
+                          child: Image.asset('assets/images/image_mat/${ProcessBook.book["scientific_name"]!["no_bg_image"] as String}'),
                         );
-                        // Gesture detector to camera
-                      } else {
-                        return const SizedBox();
-                      }
-                    });
-              })
+                    })
+              
       ],
     );
   }

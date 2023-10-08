@@ -12,7 +12,7 @@ abstract class CloudStorage {
   static final canadaSpeciesRef = storageRef.child("canada_species");
   static final americaSpeciesRef = storageRef.child("america_species");
   static final stationsRef = storageRef.child("stations");
-  static String chatGPTKey = "";
+  static String chatGPTKey = "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";
 
   // Create a reference from an HTTPS URL
   // Note that in the URL, characters are URL escaped!

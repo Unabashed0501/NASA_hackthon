@@ -1,6 +1,7 @@
 // ignore_for_file: non_constant_identifier_names
 
 import 'package:csv/csv.dart';
+import 'package:flutter/material.dart';
 import 'package:water_app/Storage/cloud_storage.dart';
 
 abstract class ProcessBook {
@@ -8,11 +9,13 @@ abstract class ProcessBook {
 
   static Future<Map<String, Map<String, dynamic>>> processCsv(context) async {
     if (book.isEmpty) {
-      var bookString = await CloudStorage.getRawtxtData("ill_book.csv");
+      var bookDataString = await DefaultAssetBundle.of(context).loadString(
+        "assets/data/ill_book.csv",
+      );
 
       List<List<dynamic>> bookCsv =
-          const CsvToListConverter().convert(bookString, eol: "\n");
-
+          const CsvToListConverter().convert(bookDataString, eol: "\n");
+    
       int REGIONIDX = 1;
       int SCINAMEIDX = 2;
       int COMMONNAMEIDX = 3;
